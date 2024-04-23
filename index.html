@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #FFAD23;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #main{
+            width: 40vw;
+            background-color: #121418;
+            height: 70vh;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 0 1rem rgba(44, 39, 39, 0.7)
+        }
+        #emoji{
+            font-size: 80px;
+            margin: 40px 0;
+        }
+        #jokeContent{
+            color: white;
+            /* font-size: 30px; */
+            font-weight: lighter;
+            position: relative;
+            top: 40px;
+            display: none;
+        }
+        #genJoke{
+            color:#121418 ;
+            background-color:#FFAD23 ;
+            font-size: 20px;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-top: 90px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 id="emoji">😂</h1>
+        <p id="jokeContent"></p>
+        <button id="genJoke">Get Random Joke</button>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
